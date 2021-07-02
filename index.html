@@ -11,7 +11,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <title>Ingrese sus datos</title>
 </head>
@@ -29,27 +29,27 @@
         <div class="col-auto">
 
             <div class=" container p-5  formstyle bgform shadow-lg p-3  bg-body ">
-                
-                <form id="formcontacto">
+
+                <form id="basic-form">
                     <div class="row" style="justify-content: center !important;">
-                        <h3 class="text-white text-center">Datos personales</h3>
+                        <h3 class="text-white text-center">Datos personales 👁️‍🗨️</h3>
 
 
-                        <div class="text-center">
+                        <div class="ctrmb">
                             <div class="row mt-3 p-4  texc" style="background-color: #08174b; border-radius: 20px;">
                                 <div class="col-6">
                                     <label for="basic-url" class="form-label text-white">Ingrese su nombre: </label>
-                                    <input type="text" class="form-control formstyle" id="nombre" required>
+                                    <input type="text" class=" form-control formstyle" id="nombre" name="nombre">
                                 </div>
 
                                 <div class="col-6">
                                     <label for="basic-url" class="form-label text-white">Ingrese su apellido:</label>
-                                    <input class="form-control formstyle   bg-body" id="apellido" required>
+                                    <input class=" form-control formstyle   bg-body" id="apellido" name="apellido">
                                 </div>
                                 <div>
                                     <label class="form-label text-white mt-3">Ingrese su lugar de nacimiento:</label>
-                                    <select class="form-select formstyle col-5  bg-body " id="nacimiento"
-                                        aria-label="Example select with button addon" required>
+                                    <select class=" form-select formstyle col-5  bg-body " id="nacimiento"
+                                        aria-label="Example select with button addon" name="nacimiento">
                                         <option value="San Salvador">San Salvador</option>
                                         <option value="Soyapango">Soyapango</option>
                                         <option value="Ilopango">Ilopango</option>
@@ -62,52 +62,36 @@
 
                     </div>
                     <div class="text-center">
-                        <button type="button" id="enviar" class="btn mt-4 text-white" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" style="background-color: #08174b; border-radius: 20px;">
-                            Enviar datos
-                        </button>
+                        <input  type="submit" value="Enviar" id="enviar" class="btn mt-4 text-white"
+                            style="background-color: #08174b; border-radius: 20px; "  data-toggle="modal" data-target="#exampleModalCenter" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                     </div>
 
                 </form>
-
-
-                <div class="text-center  mt-5">
-
-                    <input type="text" name="" id="nom" class="textotal" readonly disabled>
-                    <input type="text" name="" id="ap" class="textotal" readonly disabled>
-                    <input type="text" name="" id="nac" class="textotal" readonly disabled>
-
-                </div>
+        
+              
             </div>
+            <div class="text-center mt-3">
+                
+            
+            <div id="texto1"></div>
+            <div id="texto2"></div>
+
+            <div class="text-center mt-5">
+
+
+                <input type="text" name="" id="nom" class="textotal" readonly disabled>
+                <input type="text" name="" id="ap" class="textotal" readonly disabled>
+                <input type="text" name="" id="nac" class="textotal" readonly disabled>
+
+            </div>
+        </div>
 
         </div>
     </div>
 
 
 
-
-    <!-- Button trigger modal -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="border-radius: 15px !important; ">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h3>Datos agregados correctamente</h3>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn text-white" data-bs-dismiss="modal"
-                        style="background-color: black;">Close</button>
-
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 

@@ -20,11 +20,19 @@ body{
 .textotal{
     border-style: none; 
     background: none; 
-    color: white;
+    color: rgb(2, 2, 78);
+    font-size: 1.7rem;
+    border-bottom-style: solid;
+    text-align: center;
+    font-weight: 800;
 
 
 }
-
+.error{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: red;
+}
 
 @media only screen and (max-width: 600px) {
     .row{
