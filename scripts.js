@@ -11,23 +11,25 @@ $(document).ready(function () {
     $("#ap").val(apellido);
     $("#nac").val(nacimiento);
   });
+  
+  $("#formcontacto").validate({
+	rules: {
+		nombre: { required: true, minlength: 2},
+		apellido: { required:true, minlength: 2},
+		nacimiento: { required: true},
+
+	},
+	messages: {
+		nombre: {  required: "Por favor ingrese un nombre"},
+		apellido : {  required: "Por favor ingrese un nombre"},
+		nacimiento :  {  required: "Por favor ingrese un nombre"}
+
+	}
+});
 });
 
 
-$().ready(function() {
-	$("#formcontacto").validate({
-		rules: {
-			nombre: { required: true, minlength: 2},
-			apellido: { required:true, email: true},
-			nacimiento: { minlength: 2, maxlength: 15},
-
-		},
-		messages: {
-			nombre: "El campo es obligatorio.",
-			apellido : "El campo es obligatorio y debe tener formato de email correcto.",
-			nacimiento : "El campo Teléfono no contiene un formato correcto.",
-
-		}
-	});
+$(document).ready(function() {
+	
 });
 
